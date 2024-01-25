@@ -9,7 +9,7 @@ import '../../../domain/usecase/get_users_usecase.dart';
 class UserBloc extends Bloc<UserEvent, UserState> {
   final GetUsersUseCase getUsersUseCase;
 
-  UserBloc(this.getUsersUseCase) : super(const UserInitialState()) {
+  UserBloc(this.getUsersUseCase) : super( UserInitialState()) {
     on<FetchUsersEvent>(onGetUserss);
   }
 
